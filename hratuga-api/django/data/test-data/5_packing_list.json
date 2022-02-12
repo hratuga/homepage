@@ -1,0 +1,27 @@
+[
+    {
+      "model": "basic.packinglist",
+      "pk": 1,
+      "fields": {
+        "id": 1,
+        "name": "Sommerfahrt 2020"
+      }
+    },
+    {
+      "model": "basic.packinglist",
+      "pk": 2,
+      "fields": {
+        "id": 2,
+        "name": "Sommerfahrt 2021"
+      }
+    },
+    {
+      "model": "basic.packinglist",
+      "pk": 3,
+      "fields": {
+        "id": 3,
+        "name": "Knecht Rubprecht"
+      }
+    }
+  ]
+  

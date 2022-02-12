@@ -1,0 +1,36 @@
+[
+  {
+    "model": "basic.event",
+    "pk": 1,
+    "fields": {
+      "id": 1,
+      "title": "Sommerfahrt 2022",
+      "organizer": "Stamm",
+      "responsible_person": "Robert",
+      "start_date": "2022-07-01 10:00:00.660006",
+      "end_date": "2022-07-15 20:00:00.660006",
+      "deadline_date": "2022-06-01 00:00:00.660006",
+      "start_place": "Heim",
+      "end_place": "Heim",
+      "costs": 200.0
+
+    }
+  },
+  {
+    "model": "basic.event",
+    "pk": 2,
+    "fields": {
+      "id": 2,
+      "title": "Knecht Rubprecht 2022",
+      "organizer": "Stamm",
+      "responsible_person": "Daniel",
+      "start_date": "2022-12-01 10:00:00.660006",
+      "end_date": "2022-12-15 20:00:00.660006",
+      "deadline_date": "2022-11-01 00:00:00.660006",
+      "start_place": "Heim",
+      "end_place": "Heim",
+      "costs": 20.0
+
+    }
+  }
+]
