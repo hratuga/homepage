@@ -1,0 +1,25 @@
+[
+    {
+      "model": "basic.newsbox",
+      "pk": 1,
+      "fields": {
+        "id": 1,
+        "name": "Sommerfest 2021",
+        "valid_from": "2021-06-01 00:00:00.660006",
+        "valid_till": "2021-11-01 00:00:00.660006",
+        "priority": 1
+      }
+    },
+    {
+      "model": "basic.newsbox",
+      "pk": 2,
+      "fields": {
+        "id": 2,
+        "name": "Neue Meute",
+        "valid_from": "2022-01-01 00:00:00.660006",
+        "valid_till": "2022-06-01 00:00:00.660006",
+        "priority": 2
+      }
+    }
+  ]
+  

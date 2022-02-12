@@ -1,0 +1,27 @@
+[
+    {
+      "model": "basic.packinglisttag",
+      "pk": 1,
+      "fields": {
+        "id": 1,
+        "name": "Haik"
+      }
+    },
+    {
+      "model": "basic.packinglisttag",
+      "pk": 2,
+      "fields": {
+        "id": 2,
+        "name": "Essenszeug"
+      }
+    },
+    {
+      "model": "basic.packinglisttag",
+      "pk": 3,
+      "fields": {
+        "id": 3,
+        "name": "Navigation"
+      }
+    }
+  ]
+  
