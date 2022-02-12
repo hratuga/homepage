@@ -31,7 +31,7 @@ DEBUG = env('DEBUG')
 ALLOWED_HOSTS = [
     '127.0.0.1',
     'localhost',
-    'lrqfuhzt39.execute-api.eu-central-1.amazonaws.com'
+    'ecx52yn3hi.execute-api.eu-central-1.amazonaws.com'
 ]
 
 CORS_ALLOW_CREDENTIALS = True

@@ -16,7 +16,6 @@ django-environ==0.4.5
 django-filter==2.4.0
 django-keycloak @ git+https://github.com/Peter-Slump/django-keycloak.git@5211fba26ae4216b4344309eb4a67da9745ada05
 django-rest-auth==0.9.5
-django-stdimage==5.3.0
 django-storages==1.6.6
 django-utils-six==2.0
 djangorestframework==3.12.4
