@@ -25,8 +25,10 @@ class Group(TimeStampMixin):
     weekday = models.CharField(max_length=10)
     time_start = models.CharField(max_length=10)
     time_end = models.CharField(max_length=10)
-    text = QuillField(max_length=1000, blank=True)
+    text = QuillField(max_length=10000, blank=True)
     group_leader = models.CharField(max_length=60, blank=True)
+    picture_url = models.CharField(max_length=60, blank=True)
+    year_of_borth = models.CharField(max_length=60, blank=True)
 
     def __str__(self):
         return self.name
@@ -44,7 +46,7 @@ class Event(TimeStampMixin):
     title = models.CharField(max_length=60)
     organizer = models.CharField(max_length=30)
     responsible_person = models.CharField(max_length=30)
-    description = QuillField(max_length=1000, blank=True)
+    description = QuillField(max_length=10000, blank=True)
     start_date = models.DateTimeField(blank=True, null=True)
     end_date = models.DateTimeField(blank=True, null=True)
     deadline_date = models.DateTimeField(blank=True, null=True)
@@ -68,8 +70,8 @@ class Faq(TimeStampMixin):
         primary_key=True,
         serialize=False,
         verbose_name='ID')
-    question = QuillField(max_length=1000, blank=True)
-    answer = QuillField(max_length=1000, blank=True)
+    question = QuillField(max_length=10000, blank=True)
+    answer = QuillField(max_length=10000, blank=True)
     sorting = models.IntegerField(
         blank=False, auto_created=True, unique=True, null=True)
 
@@ -137,7 +139,7 @@ class NewsBox(TimeStampMixin):
         serialize=False,
         verbose_name='ID')
     name = models.CharField(max_length=60)
-    content = QuillField(max_length=1000, blank=True)
+    content = QuillField(max_length=10000, blank=True)
     valid_from = models.DateTimeField()
     valid_till = models.DateTimeField()
     priority = models.PositiveIntegerField()
