@@ -1,0 +1,35 @@
+[
+    {
+      "model": "basic.packinglistitem",
+      "pk": 1,
+      "fields": {
+        "id": 1,
+        "name": "Wanderrucksack"
+      }
+    },
+    {
+      "model": "basic.packinglistitem",
+      "pk": 2,
+      "fields": {
+        "id": 2,
+        "name": "Zahnbürste"
+      }
+    },
+    {
+      "model": "basic.packinglistitem",
+      "pk": 3,
+      "fields": {
+        "id": 3,
+        "name": "Döner"
+      }
+    },
+    {
+        "model": "basic.packinglistitem",
+        "pk": 4,
+        "fields": {
+          "id": 4,
+          "name": "Schlafsack"
+        }
+      }
+  ]
+  

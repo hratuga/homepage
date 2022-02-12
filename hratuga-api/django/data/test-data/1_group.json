@@ -1,0 +1,33 @@
+[
+  {
+    "model": "basic.group",
+    "pk": 1,
+    "fields": {
+      "id": 1,
+      "name": "Eisbär",
+      "tech_name": "eisbaer",
+      "description": "Beste Gruppe ever!",
+      "age_group": 3,
+      "is_searching": false,
+      "weekday": "Montag",
+      "time_start": "18:00",
+      "time_end": "20:00"
+    }
+  },
+  {
+    "model": "basic.group",
+    "pk": 2,
+    "fields": {
+      "id": 2,
+      "name": "Luchs",
+      "tech_name": "luchs",
+      "description": "Zweitbeste Gruppe ever!",
+      "age_group": 2,
+      "is_searching": false,
+      "weekday": "Donnerstag",
+      "time_start": "16:00",
+      "time_end": "17:00",
+      "group_leader": "Daniel"
+    }
+  }
+]
