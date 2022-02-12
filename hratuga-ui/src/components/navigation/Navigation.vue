@@ -3,8 +3,11 @@
     <nav class="mx-auto px-4 sm:px-6 lg:px-8" aria-label="Top">
       <div class="w-full py-6 flex items-center justify-between border-b border-cyan-500 lg:border-none">
         <div class="flex items-center">
-          <div class="hidden ml-10 space-x-8 lg:block">
-            <router-link v-for="link in navigation" :key="link.name" :to="link.to" class="text-base font-medium text-white hover:text-indigo-50 p-4" active-class="border-2 border-b-red-600 border-t-transparent border-x-transparent bg-black">
+          <div class="hidden ml-10 lg:block">
+            <router-link v-for="link in navigation" :key="link.name"
+                         :to="link.to"
+                         class="text-base font-medium text-white hover:bg-black p-4 border-2 border-transparent"
+                         active-class="border-b-red-600 border-t-transparent border-x-transparent bg-black">
               {{ link.name }}
             </router-link>
           </div>

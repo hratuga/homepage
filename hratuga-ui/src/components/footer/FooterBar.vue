@@ -32,7 +32,7 @@
         </div>
       </div>
       <div class="mt-12 border-t border-gray-200 pt-8">
-        <p class="text-base text-gray-400 xl:text-center">&copy; 2021 Stamm Hratuga</p>
+        <p class="text-base text-gray-400 xl:text-center">&copy; {{new Date().getFullYear()}} Stamm Hratuga</p>
       </div>
     </div>
   </footer>
