@@ -1,8 +1,8 @@
 import os
+
+
 from datetime import timedelta
 import environ
-from pathlib import Path
-import sys
 
 env = environ.Env()
 
@@ -19,22 +19,14 @@ print("env found: debug mode: ", env('DEBUG'))
 SECRET_KEY = env('SECRET_KEY')
 DEBUG = env('DEBUG')
 
-print("env found: debug mode: ", env('DEBUG'))
-
-# Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
-
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = env('SECRET_KEY')
-DEBUG = env('DEBUG')
 
 ALLOWED_HOSTS = [
     '127.0.0.1',
     'localhost',
-    'ecx52yn3hi.execute-api.eu-central-1.amazonaws.com'
+    'udmzqtebde.execute-api.eu-central-1.amazonaws.com', # dev
+    '0xbmejtcw4.execute-api.eu-central-1.amazonaws.com' # main
 ]
 
-CORS_ALLOW_CREDENTIALS = True
 
 # Application definition
 
@@ -48,24 +40,19 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'rest_framework_tracking',
     'django_filters',
     'storages',
     'django_quill'
 ]
 
 MIDDLEWARE = [
-    'django.middleware.gzip.GZipMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'corsheaders.middleware.CorsMiddleware',
-    'django.middleware.cache.UpdateCacheMiddleware',
-    'django.middleware.common.CommonMiddleware',
-    'django.middleware.cache.FetchFromCacheMiddleware',
 ]
 
 ROOT_URLCONF = 'hratuga.urls'
@@ -177,14 +164,6 @@ else:
 STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 
 DATA_UPLOAD_MAX_MEMORY_SIZE = 5242880
-
-CORS_ORIGIN_WHITELIST = [
-    "https://localhost:8080",
-    "https://127.0.0.1:8080",
-]
-CORS_ORIGIN_REGEX_WHITELIST = [
-    'http://localhost:8080',
-]
 
 CORS_ORIGIN_ALLOW_ALL = True
 

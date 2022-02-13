@@ -31,3 +31,16 @@ Windows: `python manage.py add_fixtures test-data`
 
 # PostGres for MacOS
 `brew install postgresql`
+
+
+# docker
+docker run -ti -e AWS_PROFILE=robert-dpbm -v "$(pwd):/var/task" -v ~/.aws/:/root/.aws  --rm lambci/lambda:build-python3.8 bash
+
+# create venv
+`virtualenv venv`
+
+`source venv/bin/activate`
+
+`pip install -r requirements.txt`
+
+`zappa update dev`
