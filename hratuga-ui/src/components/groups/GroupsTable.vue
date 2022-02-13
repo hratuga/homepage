@@ -6,7 +6,7 @@
     <thead class="bg-gray-50 border-b">
     <tr class="border-t-4" :class="ageGroupColor[index]">
       <th scope="col" class="text-center px-6 py-3 text-left border-r tracking-wider">Gruppenname</th>
-      <th scope="col" class="text-center px-6 py-3 text-left border-r tracking-wider">Gruppenstunde</th>
+      <th v-if="index > 0" scope="col" class="text-center px-6 py-3 text-left border-r tracking-wider">Gruppenstunde</th>
       <th scope="col" class="text-center px-6 py-3 text-left border-r tracking-wider">Kontakt E-Mail</th>
     </tr>
     </thead>

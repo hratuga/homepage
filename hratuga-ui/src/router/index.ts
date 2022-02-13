@@ -3,6 +3,7 @@ import HomeView from "@/views/landingPages/HomeView.vue";
 import CalendarView from "@/views/landingPages/CalendarView.vue"
 import GroupsView from "@/views/landingPages/GroupsView.vue"
 import GroupPage from "@/components/groups/GroupPage.vue";
+import CalendarDateDetailPage from "@/components/calendar/CalendarDateDetailPage.vue"
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -16,6 +17,11 @@ const router = createRouter({
       path: "/termine",
       name: "Calendar",
       component: CalendarView,
+    },
+    {
+      path: "/termine/:eventId",
+      name: "CalendarDateDetailPage",
+      component: CalendarDateDetailPage,
     },
     {
       path: "/gruppen",
