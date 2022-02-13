@@ -46,6 +46,7 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -165,7 +166,8 @@ STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 
 DATA_UPLOAD_MAX_MEMORY_SIZE = 5242880
 
-CORS_ORIGIN_ALLOW_ALL = True
+CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOW_CREDENTIALS = True
 
 SECURE_SSL_REDIRECT = False
 SESSION_COOKIE_SECURE = False
