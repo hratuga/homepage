@@ -1,10 +1,12 @@
 <template>
-
+<group-overview />
 </template>
 
 <script>
+import GroupOverview from "@/components/landingpages/GroupOverview.vue";
 export default {
-  name: "OurGroups"
+  name: "OurGroups",
+  components: {GroupOverview}
 }
 </script>
 

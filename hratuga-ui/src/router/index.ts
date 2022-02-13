@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "@/views/landingPages/HomeView.vue";
 import CalendarView from "@/views/landingPages/CalendarView.vue"
 import GroupsView from "@/views/landingPages/GroupsView.vue"
+import GroupPage from "@/components/groups/GroupPage.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -22,9 +23,9 @@ const router = createRouter({
       component: GroupsView,
     },
     {
-      path: "/gruppen/:groupTechnicalName",
+      path: "/gruppen/:groupTechName",
       name: "GroupPage",
-      component: HomeView,
+      component: GroupPage,
     },
     {
       path: "/was-ist-pfadfinder",
