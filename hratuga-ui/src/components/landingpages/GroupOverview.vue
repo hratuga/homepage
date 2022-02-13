@@ -28,7 +28,7 @@ export default {
   methods: {
     async loadGroups() {
       const {data} = await axios.get(`${import.meta.env.VITE_APP_API}/basic/group`);
-      const groupedByAgeGroup = [[], [], [], []];
+      const groupedByAgeGroup = Array.from(Array(4), () => []);
       data.forEach(({ageGroup, ...rest}) => {
         groupedByAgeGroup[ageGroup].push({...rest, ageGroup})
       })

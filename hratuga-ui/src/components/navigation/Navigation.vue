@@ -34,7 +34,8 @@ export default {
       navigation: [
         {name: 'Home', to: '/'},
         {name: 'Pfadfinder?', to: '/was-ist-pfadfinder'},
-        {name: 'Unsere Gruppen', to: '/gruppen'}
+        {name: 'Unsere Gruppen', to: '/gruppen'},
+        {name: 'Termine', to: '/termine'},
       ],
     }
   },
