@@ -34,7 +34,7 @@ Windows: `python manage.py add_fixtures test-data`
 
 
 # docker
-docker run -ti -e AWS_PROFILE=robert-dpbm -v "$(pwd):/var/task" -v ~/.aws/:/root/.aws  --rm lambci/lambda:build-python3.8 bash
+docker run -ti -e AWS_PROFILE=default -v "$(pwd):/var/task" -v ~/.aws/:/root/.aws  --rm lambci/lambda:build-python3.8 bash
 
 # create venv
 `virtualenv venv`
