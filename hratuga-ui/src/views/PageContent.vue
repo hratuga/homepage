@@ -13,17 +13,24 @@ import BannerImage from "@/components/banner/BannerImage.vue";
 export default {
   name: "PageContent",
   components: {BannerImage},
+  data: () => ({
+    defaultBannerOptions: {
+      imagePath: 'src/assets/banner/Dolomiten.jpg',
+      altImageText: 'Berge von Dolomiten',
+      headline: '',
+    },
+  }),
   computed: {
     bannerParams() {
       const bannerOptions = {
         'Home': {
-          imagePath: 'src/assets/banner/Dolomieten.jpg',
-          altImageText: 'Berge von Dolomieten',
+          imagePath: 'src/assets/banner/Dolomiten.jpg',
+          altImageText: 'Berge von Dolomiten',
           headline: 'Stamm Hratuga',
         }
       }
       const { name } = this.$route
-      return bannerOptions[name]
+      return bannerOptions[name] || this.defaultBannerOptions
     }
   }
 }
