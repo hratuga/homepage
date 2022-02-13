@@ -17,9 +17,9 @@ export default {
     bannerParams() {
       const bannerOptions = {
         'Home': {
-          imagePath: '@/assets/bild.jpg',
-          altImageText: 'Alternativtext zum Bild',
-          headline: 'Tiiiiiiitel',
+          imagePath: 'src/assets/banner/Dolomieten.jpg',
+          altImageText: 'Berge von Dolomieten',
+          headline: 'Stamm Hratuga',
         }
       }
       const { name } = this.$route
