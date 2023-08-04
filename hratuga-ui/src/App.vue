@@ -1,12 +1,13 @@
 <template>
-  <navigation />
-  <page-content />
-  <footer-bar />
+  <v-app id="hratuga-homepage">
+    <AppBarNavigation />
+    <AppMain />
+    <AppFooter />
+  </v-app>
 </template>
 
-<script setup lang="ts">
-import { RouterLink, RouterView } from "vue-router";
-import Navigation from "@/components/navigation/Navigation.vue";
-import FooterBar from "@/components/footer/FooterBar.vue"
-import PageContent from "@/views/PageContent.vue";
+<script setup>
+import AppFooter from "@/components/app/AppFooter.vue";
+import AppBarNavigation from "@/components/app/AppBarNavigation.vue";
+import AppMain from "@/components/app/AppMain.vue";
 </script>
