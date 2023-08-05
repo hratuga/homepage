@@ -11,13 +11,17 @@
         v-for="(title, name) in sidebarNavItems"
         :key="name"
         :to="{ name }"
+        density="compact"
       >
         {{ title }}
       </v-list-item>
     </v-list>
   </v-navigation-drawer>
 
-  <v-app-bar color="black">
+  <v-app-bar
+    color="black"
+    density="compact"
+  >
     <v-app-bar-nav-icon @click="drawer = !drawer" />
 
     <v-toolbar-title>Pfadfinderstamm Hratuga</v-toolbar-title>

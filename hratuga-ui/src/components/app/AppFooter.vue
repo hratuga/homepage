@@ -10,8 +10,8 @@
         :to="name.startsWith('//') ? name : { name }"
         :target="name.startsWith('//') ? '_blank' : null"
         color="white"
+        size="small"
         variant="text"
-        class="mx-2"
         rounded="xl"
       >
         {{ title }}
