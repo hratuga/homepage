@@ -1,5 +1,5 @@
 <template>
-  <v-footer color="black">
+  <v-footer :color="barColor">
     <v-row
       justify="center"
       no-gutters
@@ -9,18 +9,17 @@
         :key="title"
         :to="name.startsWith('//') ? name : { name }"
         :target="name.startsWith('//') ? '_blank' : null"
-        color="white"
-        size="small"
-        variant="text"
+        color="#6B7280"
+        variant="plain"
         rounded="xl"
       >
         {{ title }}
       </v-btn>
       <v-col
-        class="text-center"
+        class="text-center text-grey-lighten-1"
         cols="12"
       >
-        &copy; {{ new Date().getFullYear() }} — <strong>Stamm Hratuga</strong>
+        &copy; {{ new Date().getFullYear() }} Stamm Hratuga
       </v-col>
     </v-row>
   </v-footer>
@@ -29,8 +28,8 @@
 <script setup>
 const footerNavItems = [
   {
-    title: 'Wikituga',
-    name: '//wiki.hratuga.de',
+    title: 'Heimabend-Inspirator',
+    name: '//inspirator.dpbm.de',
   },
   {
     title: 'Partnerstamm in Ratingen Mitte',
@@ -53,4 +52,6 @@ const footerNavItems = [
     name: 'privacy',
   },
 ];
+
+const barColor = '#111827';
 </script>

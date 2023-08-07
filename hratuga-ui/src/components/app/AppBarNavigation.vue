@@ -1,7 +1,8 @@
 <template>
   <v-navigation-drawer
     v-model="drawer"
-    color="black"
+    :color="barColor"
+    class="text-white"
   >
     <v-list
       density="compact"
@@ -19,8 +20,9 @@
   </v-navigation-drawer>
 
   <v-app-bar
-    color="black"
     density="compact"
+    class="text-white"
+    :color="barColor"
   >
     <v-app-bar-nav-icon @click="drawer = !drawer" />
 
@@ -38,7 +40,8 @@ const sidebarNavItems = {
   groups: 'Gruppen',
   dates: 'Termine',
   gallery: 'Fotos',
-  download: 'Downloads',
+  downloads: 'Downloads',
   foerderverein: 'Förderverein',
 };
+const barColor = '#111827';
 </script>
