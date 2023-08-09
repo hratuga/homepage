@@ -1,7 +1,7 @@
 <template>
   <v-container class="w-75">
     <v-row
-      class="text-md-h4 text-h5 mt-9"
+      class="text-md-h4 text-h5"
       justify="center"
     >
       Klicke auf eine Gruppe für mehr Details
@@ -50,7 +50,7 @@
               Nach Absprache
             </td>
             <td v-if="ageRange?.length === 2">
-              Jahrgänge: {{ ageRange[0] }} bis {{ ageRange[1] }}
+              {{ ageRange[0] }} bis {{ ageRange[1] }}
             </td>
             <td v-else-if="color !== 'stafue'">
               --
@@ -202,8 +202,6 @@ const tables = [
 </script>
 
 <style scoped lang="scss">
-@use "node_modules/vuetify/lib/components/VTable/_variables.scss" as vuetify;
-
 $table-border-color: #E5E7EB;
 
 .border-t-woelfling {
@@ -238,6 +236,8 @@ div.v-table {
           text-align: center;
           border: thin solid $table-border-color;
           border-top: inherit;
+          color: black;
+          background-color: rgb(249,250,251);
         }
       }
     }

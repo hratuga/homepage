@@ -2,59 +2,15 @@
   <v-container>
     <v-row class="mb-5">
       <v-col>
-        <v-alert
-          type="info"
-          color="red"
-          prominent
-          variant="elevated"
-        >
-          <template #title>
-            <div class="text-center w-100">
-              Wir treffen uns neuerdings regelmäßig montags von 17:00 bis 18:30 Uhr <br>
-              mit unserer Gruppe für Kinder von 7 bis 11 Jahren und suchen noch Verstärkung!<br>
-              Komm du doch gerne mal vorbei!<br>
-              Bei Fragen wende dich einfach an: <strong>nik @ hratuga.de</strong>
-            </div>
-          </template>
-        </v-alert>
+        <Infobox />
       </v-col>
     </v-row>
-    <v-row
-      v-for="({ title, text, img}, idx) in content"
-      :key="title + idx"
-      class="d-flex align-center justify-center mb-10 mb-lg-5"
+
+    <TextWithImage
+      :content="content"
     >
-      <v-col
-        cols="12"
-        lg="6"
-        order="1"
-        :order-lg="2 - idx % 2"
-      >
-        <v-img
-          :src="img"
-          max-width="100%"
-          class="rounded-lg elevation-6"
-          cover
-        />
-      </v-col>
-      <v-col
-        cols="12"
-        lg="6"
-        order="2"
-        :order-lg="1 + idx % 2"
-      >
-        <div class="text-h5 font-weight-black">
-          {{ title }}
-        </div>
-        <p
-          v-for="textContent in text"
-          :key="textContent"
-          class="mb-3"
-        >
-          {{ textContent }}
-        </p>
+      <template #appendToLast>
         <v-btn
-          v-if="idx === content.length - 1"
           variant="elevated"
           size="large"
           color="red"
@@ -63,12 +19,15 @@
         >
           Hier geht's zu den Gruppen
         </v-btn>
-      </v-col>
-    </v-row>
+      </template>
+    </TextWithImage>
   </v-container>
 </template>
 
 <script setup>
+import Infobox from "@/components/Infobox.vue";
+import TextWithImage from "@/components/TextWithImage.vue";
+
 const content = [
   {
     title: 'Pfadfindergruppe aus Ratingen-Homberg',

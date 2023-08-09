@@ -26,7 +26,7 @@
   >
     <v-app-bar-nav-icon @click="drawer = !drawer" />
 
-    <v-toolbar-title>Pfadfinderstamm Hratuga</v-toolbar-title>
+    <v-app-bar-title>Pfadfinderstamm Hratuga</v-app-bar-title>
   </v-app-bar>
 </template>
 

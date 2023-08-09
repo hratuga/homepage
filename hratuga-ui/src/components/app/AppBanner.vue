@@ -2,6 +2,7 @@
   <v-parallax
     src="https://hratuga.de/static/img/22.0ac4e12.jpg"
     height="250px"
+    class="mb-5"
   >
     <div
       class="d-flex flex-column fill-height justify-center align-center text-white w-100 h-100"
