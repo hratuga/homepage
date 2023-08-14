@@ -45,7 +45,7 @@ const footerNavItems = [
   },
   {
     title: 'Impressum',
-    name: 'gallery',
+    name: 'impress',
   },
   {
     title: 'Datenschutzerklärung',

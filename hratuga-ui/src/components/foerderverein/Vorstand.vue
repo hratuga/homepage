@@ -10,14 +10,17 @@ const people = [
   {
     name: 'Lea Heinze',
     role: 'Stellv. Vorsitzende',
+    mail: 'lea@stamm-dumeklemmer.de',
   },
   {
     name: 'Nadine Beringer',
     role: 'Kassenwärtin',
+    mail: 'nadine@stamm-dumeklemmer.de',
   },
   {
     name: 'Stefan Stechemesser',
     role: 'Schriftführer',
+    mail: 'stefan@stamm-dumeklemmer.de',
   },
 ]
 </script>

@@ -76,7 +76,7 @@ const routes = [
         // route level code-splitting
         // this generates a separate chunk (about.[hash].js) for this route
         // which is lazy-loaded when the route is visited.
-        component: () => import(/* webpackChunkName: "impress" */ '@/views/Home.vue'),
+        component: () => import(/* webpackChunkName: "impress" */ '@/views/Impress.vue'),
       },
       {
         path: 'contact',
@@ -92,7 +92,7 @@ const routes = [
         // route level code-splitting
         // this generates a separate chunk (about.[hash].js) for this route
         // which is lazy-loaded when the route is visited.
-        component: () => import(/* webpackChunkName: "privacy" */ '@/views/Home.vue'),
+        component: () => import(/* webpackChunkName: "privacy" */ '@/views/PrivacyPolicy.vue'),
       },
     ],
   },
